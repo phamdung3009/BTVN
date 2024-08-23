@@ -1,18 +1,15 @@
 package BaiTap_22_08_2024;
 
 
-import BaiTap_22_08_2024.entities.ContractEmployee;
-import BaiTap_22_08_2024.entities.EmployeeManager;
-import BaiTap_22_08_2024.entities.FullTimeEmployee;
-import BaiTap_22_08_2024.entities.PartTimeEmployee;
+import BaiTap_22_08_2024.entities.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
         EmployeeManager employeeManager = new EmployeeManager();
         System.out.println("Danh sách sinh viên:");
-        FullTimeEmployee fullTime = new FullTimeEmployee("1", "A", 100, 10);
-        PartTimeEmployee fartTime = new PartTimeEmployee("2", "B", 120, 8, 20);
-        ContractEmployee conTract = new ContractEmployee("3", "C", 110, 1000);
+        Employee fullTime = new FullTimeEmployee("1", "A", 100, 10);
+        Employee fartTime = new PartTimeEmployee("2", "B", 120, 8, 20);
+        Employee conTract = new ContractEmployee("3", "C", 110, 1000);
         employeeManager.addEmployee(fullTime);
         employeeManager.addEmployee(fartTime);
         employeeManager.addEmployee(conTract);
