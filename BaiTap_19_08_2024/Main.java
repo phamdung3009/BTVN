@@ -6,13 +6,14 @@ import BaiTap_19_08_2024.entities.Library;
 public class Main {
     public static void main(String[] args) {
         Library lib = new Library();
-        // thêm mới 5 loại sách
+        //
         lib.addBook(new Book("Book1", "A1", "1"));
         lib.addBook(new Book("Book2", "A2", "2"));
         lib.addBook(new Book("Book3", "A3", "3"));
         lib.addBook(new Book("Book4", "A4", "4"));
         lib.addBook(new Book("Book5", "A5", "5"));
-        // Hiển thị tất cả các loại sách
+
+        // display books
         lib.displayBooks();
         System.out.println("-----------------------------------------");
         // mượn sách

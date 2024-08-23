@@ -4,18 +4,18 @@ import BaiTap_19_08_2024.function.IFunction;
 
 import java.util.*;
 
+/*han che comment*/
 public class Library implements IFunction {
     private List<Book> books = new ArrayList<>(); //danh sách các sách trong thư viện
     private Set<String> borrowedBooks = new HashSet<>();//tập hợp các ISBN của các sách đã được mượn.
-    private Map<String, String> borrowedBy = new HashMap<>();//ánh xạ ISBN của sách với tên người mượn.
+    private Map<String, String> borrowedBy = new HashMap<>();//<ISBN, nguoi muon>
 
-    // thêm một cuốn sách vào thư viện.
     @Override
     public void addBook(Book book) {
         books.add(book);
     }
 
-    // cho phép mượn một cuốn sách. Nếu sách đã bị mượn thì ném ra một ngoại lệ.
+
     @Override
     public void borrowBook(String isbn, String borrower) throws Exception {
         if (borrowedBooks.contains(isbn)) {// kiểm tra xem mã sách đã được mượn chưa?
